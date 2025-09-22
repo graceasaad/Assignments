@@ -32,6 +32,8 @@ class sandwichMaker:
                 "cost": 5.50,
             }
         }
+
+
     def check_resources(self, ingredients):
         for item, amount  in ingredients.items():
             if self.resources[item] < amount:
@@ -68,7 +70,8 @@ def main():
     machine = sandwichMaker()
     is_on = True
     while is_on:
-        choice = input("What would you like? (Small/ Medium/ Large/ Report/ Off): ").lower()
+        choice = input(
+
 
         if choice == "off":
             is_on= False
