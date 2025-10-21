@@ -1,6 +1,6 @@
 class SandwichMaker:
     def __init__(self, resources):
-        self.machine_resources = resources
+        self.resources = resources
 
     def check_resources(self, ingredients):
         for item, amount in ingredients.items():
@@ -9,7 +9,7 @@ class SandwichMaker:
                 return False
         return True
     def make_sandwich(self, s_size, order_ingredients):
-        for item, amount in ingredients.items():
+        for item, amount in order_ingredients.items():
             self.resources[item]-= amount
             print("Order complete. Enjoy!")
 
